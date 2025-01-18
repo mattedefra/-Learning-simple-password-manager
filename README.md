@@ -1,1 +1,1 @@
-# -Learning-simple-password-manager
+# [Learning] simple password manager

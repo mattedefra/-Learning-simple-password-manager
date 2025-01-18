@@ -22,6 +22,7 @@ def retrieve_psw():
         lines = f.readlines()
         psw_dict = {element.split(' ')[0]:element.split(' ')[1] for element in lines}
     pyperclip.copy(psw_dict[input('website which you want password for?').lower()])
+    #psw stays on clipboard for 8 seconds because no one wants to accidentally leak their passwords
     time.sleep(8)
     pyperclip.copy('dummypsw')
 
